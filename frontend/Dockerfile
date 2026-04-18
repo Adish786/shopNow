@@ -25,7 +25,7 @@ RUN npm run build
 ############################
 # Stage 2: Runtime (nginx)
 ############################
-FROM nginx:1.24-alpine
+FROM nginx:1.30.0-alpine
 LABEL org.opencontainers.image.maintainer="you@example.com"
 
 # Copy nginx config from build context
