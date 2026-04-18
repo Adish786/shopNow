@@ -20,7 +20,7 @@ RUN npm run build
 ############################
 # Stage 2: Runtime (nginx)
 ############################
-FROM nginx:1.24-alpine
+FROM nginx:1.30.0-alpine
 
 # Copy admin-specific nginx config included in the admin folder
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
